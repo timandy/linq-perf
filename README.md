@@ -1,6 +1,9 @@
 <!--README FILE-->
 # Benchmark for LINQ to Objects (Java)
 
+[![Build Status](https://travis-ci.org/timandy/linq-perf.svg?branch=master)](https://travis-ci.org/timandy/linq-perf)
+[![License](https://img.shields.io/badge/license-Apache%202.0-4EB1BA.svg)](https://www.apache.org/licenses/LICENSE-2.0.html)
+
 Benchmarks used for testing the performance of [LINQ to Objects (Java)](https://github.com/timandy/linq).
 
 This test project runs the benchmark using the jmh library.
