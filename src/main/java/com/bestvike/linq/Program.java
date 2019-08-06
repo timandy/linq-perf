@@ -1,6 +1,6 @@
 package com.bestvike.linq;
 
-import com.bestvike.linq.common.LinkedListPerf;
+import com.bestvike.linq.common.ArrayListPerf;
 import org.openjdk.jmh.runner.Runner;
 import org.openjdk.jmh.runner.RunnerException;
 import org.openjdk.jmh.runner.options.Options;
@@ -12,7 +12,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 public class Program {
     public static void main(String[] args) throws RunnerException {
         Options opt = new OptionsBuilder()
-                .include(LinkedListPerf.class.getSimpleName())
+                .include(ArrayListPerf.class.getSimpleName())
                 .build();
 
         new Runner(opt).run();
