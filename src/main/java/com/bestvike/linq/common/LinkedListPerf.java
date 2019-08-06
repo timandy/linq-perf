@@ -23,10 +23,10 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.NANOSECONDS)
 @Fork(1)
 @State(Scope.Benchmark)
-@Warmup(iterations = 5, time = 1)
-@Measurement(iterations = 5, time = 1)
+@Warmup(iterations = 10, time = 400, timeUnit = TimeUnit.MILLISECONDS)
+@Measurement(iterations = 10, time = 400, timeUnit = TimeUnit.MILLISECONDS)
 public class LinkedListPerf {
-    @Param({"1", "10", "100"})
+    @Param({"10", "100", "1000", "10000", "100000"})
     private int count;
     private List<Integer> data;
 
@@ -50,7 +50,7 @@ public class LinkedListPerf {
     public int index() {
         int sum = 0;
         List<Integer> data = this.data;
-        for (int i = 0, len = this.count; i < len; i++) {
+        for (int i = 0, len = data.size(); i < len; i++) {
             sum += data.get(i);
         }
         return sum;
