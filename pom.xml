@@ -16,7 +16,7 @@
     <packaging>jar</packaging>
 
     <name>linq-perf</name>
-    <description>Benchmark demo for Java.</description>
+    <description>Benchmark for LINQ to Objects (Java)</description>
     <url>https://github.com/timandy/linq-perf</url>
 
     <licenses>
