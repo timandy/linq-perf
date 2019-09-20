@@ -44,6 +44,6 @@ public class SelectPerf {
 
     @Benchmark
     public int linq() {
-        return Linq.asEnumerable(this.data).select(x -> x * 2).aggregate(0, Integer::sum);
+        return Linq.of(this.data).select(x -> x * 2).aggregate(0, Integer::sum);
     }
 }

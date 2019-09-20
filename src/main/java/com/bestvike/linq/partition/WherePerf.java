@@ -44,6 +44,6 @@ public class WherePerf {
 
     @Benchmark
     public int linq() {
-        return Linq.asEnumerable(this.data).skip(10).take(10).where(x -> x % 2 == 0).aggregate(0, Integer::sum);
+        return Linq.of(this.data).skip(10).take(10).where(x -> x % 2 == 0).aggregate(0, Integer::sum);
     }
 }
