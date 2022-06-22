@@ -56,7 +56,7 @@
         <dependency>
             <groupId>com.bestvike</groupId>
             <artifactId>linq</artifactId>
-            <version>3.0.0</version>
+            <version>5.0.0</version>
         </dependency>
     </dependencies>
 
